@@ -65,13 +65,6 @@ body {
 
 </div>
 
-
-<footer>
-  Eli Rach all rights reserved
-</footer>
-
-
-
 <style> 
     @media screen and (min-width: 800px, max-width: 800px) {
   .flex-container, .side {
@@ -79,11 +72,11 @@ body {
   
   }
 }
+  
 body{
   background-color: #f7f7f7;
 }
 
- 
 
   .header {
    color: #ffffff;
@@ -98,7 +91,7 @@ body{
   }
   
   
-
+  
   
   ul { list-style-type:none;
          margin: 0px;
@@ -110,7 +103,7 @@ body{
         display: block;
         background-color: #3e0058;
         height: auto ;
-       
+    
  }
 
 
@@ -137,7 +130,9 @@ ul li a:hover {
 
 
 ul {
-
+ 
+  position: relative;
+    min-width:130px;
   top: 0;
  border-bottom: inset;
  border-top: inset;
@@ -223,10 +218,6 @@ h2 {
   
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
-    h3 {
-  
-  font-family: Georgia, 'Times New Roman', Times, serif;
-}
 
 p {
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -239,60 +230,52 @@ p {
 }
 
 div.side {
-width: 100px;
- float: right;
+
+}
+
+footer {
+   background-color: #000000;
+  padding: 10px;
+  text-align: center;
+  color: white;
+
+}
+div.flex-container {
+  display: flex;
+  float: center;
+flex-wrap: wrap;
+background-color: white;
+padding-left: 10px ;
+    padding-right: 50px;
+    height:auto;
+}
+div.side img{
+  width:300px;
+  height: auto;
+  margin-bottom: 30px;
+
+  
+ 
+}
+div.side{
+
+  float: right;
 display:block;
-padding-left: 10px;
-    padding-right: 10px;
+padding-left: 50px;
+    padding-right: 50px;
     
 
 }
-div.flex-container img {
-  width: 500px;
-
-    max-width:100%;
-
-   
-}
-
-.textbildcontainer{
-position: relative;
-  text-align: center;
-  color: white;
-    display:flex;
-}
-.textbild 
- {
- position:absolute;
-  top: 35%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 60px;
-  text-align: center;
-  font-family: comic;
-}
-
-
-#micimg {
-  width: 500px;
-  height: auto;
-}
-
-div.flex-container {
-   display: flex;
+#albumtitlereview{
+  font-size: 20px;
   float: left;
+  margin-left: 10px;
+  font-style: italic;
+  line-height: 40px;
+  text-align: left;
 
-background-color: white;
-padding-left: 10px ;
-    padding-right: 10px;
-    height:auto;
-    width: 800px;
 }
 
-#stöd{
-  font-size: 22px;
-  line-height: 30px;
-}
 #pause {
   width: 8px;
   height: 8px;
@@ -303,36 +286,35 @@ padding: 1px;
   height:10px;
 
 }
-
-
-
-div.side img{
-  width:300px;
-  height: auto;
-  margin-bottom: 30px;
+#Album2026{
+  margin-left:10px;
+  float: left;
+  text-align:left;
+  margin-bottom: 10px;
+  font-size: x-large;
 
 }
+
+
+div.flex-container img {
+  width: 500px;
+ 
+    max-width:100%;
+
+    min-width: 100%;
+}
+
 div.flex-container a:hover{
   opacity: 50%;
   background-color: #780897;
 
 }
 
-footer {
-   background-color: #000000;
-  padding: 10px;
-  text-align: center;
-  color: white;
-position: sticky;
-}
 </style>
-<script>
+  <footer>
+  Eli Rach all rights reserved
+  </footer>
 
-
-
-
-
- </script>
 
 
 </body>
