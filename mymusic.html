@@ -223,7 +223,13 @@ Säg mig vad du gör?
 </div>
 
 <style> 
-      
+    @media screen and (min-width: 800px, max-width: 800px) {
+  .flex-container, .side {
+    width: 100%;
+  
+  }
+}
+  
 body{
   background-color: #f7f7f7;
 }
@@ -254,7 +260,7 @@ body{
         display: block;
         background-color: #3e0058;
         height: auto ;
-       
+    
  }
 
 
@@ -281,7 +287,9 @@ ul li a:hover {
 
 
 ul {
-  position: sticky;
+ 
+  position: relative;
+    min-width:130px;
   top: 0;
  border-bottom: inset;
  border-top: inset;
@@ -379,7 +387,7 @@ p {
 }
 
 div.side {
-  position: sticky;
+
 }
 
 footer {
@@ -389,10 +397,42 @@ footer {
   color: white;
 
 }
-    div.flex-container {
+div.flex-container {
   display: flex;
+  float: center;
+flex-wrap: wrap;
 background-color: white;
+padding-left: 10px ;
+    padding-right: 50px;
+    height:auto;
 }
+div.side img{
+  width:300px;
+  height: auto;
+  margin-bottom: 30px;
+
+  
+ 
+}
+div.side{
+
+  float: right;
+display:block;
+padding-left: 50px;
+    padding-right: 50px;
+    
+
+}
+#albumtitlereview{
+  font-size: 20px;
+  float: left;
+  margin-left: 10px;
+  font-style: italic;
+  line-height: 40px;
+  text-align: left;
+
+}
+
 #pause {
   width: 8px;
   height: 8px;
@@ -403,24 +443,31 @@ padding: 1px;
   height:10px;
 
 }
+#Album2026{
+  margin-left:10px;
+  float: left;
+  text-align:left;
+  margin-bottom: 10px;
+  font-size: x-large;
 
-div.flex-container > div {
-  margin: 30px;
-  margin-right: 350px;
-} 
-div.side {
-  width: 22%;
- 
 }
+
+
+div.flex-container img {
+  width: 500px;
+ 
+    max-width:100%;
+
+    min-width: 100%;
+}
+
 div.flex-container a:hover{
   opacity: 50%;
   background-color: #780897;
 
 }
-div.flex-container img {
-  width: 250px;
-  height: auto;
-}
+
+</style>
 </style>
   <footer>
   Eli Rach all rights reserved
